@@ -1,0 +1,231 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/siservi2"
+        />
+    <!-- android:src="@drawable/siservi2" -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:id="@+id/password_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/email_layout"
+                    tools:ignore="UnknownId">
+
+                    <ImageView
+                        android:id="@+id/password_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_password"
+                        android:tint="@color/black" />
+                    <!-- <com.example.fluc.siservis_comanda.customfonts.MyEditText -->
+                    <EditText
+                        android:id="@+id/password_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/password_icon"
+                        android:background="@android:color/transparent"
+                        android:focusable="false"
+                        android:hint="@string/password"
+                        android:inputType="numberPassword"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/light_text"
+                        android:textSize="@dimen/text_size_medium" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/button_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/password_layout"
+                    android:background="@color/black1">
+
+                    <LinearLayout
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/colorPrimaryDark"
+                        android:clickable="true">
+
+                        <Button
+                            android:id="@+id/login_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@color/colorPrimaryDark"
+                            android:gravity="center"
+                            android:text="Ingresar"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_big" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="345dp"
+            android:layout_height="363dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/email_layout"
+                tools:ignore="UnknownId">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-15dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnActLogNum1"
+                            style="@style/botonNumeral"
+                            android:text="1" />
+
+                        <Button
+                            android:id="@+id/btnActLogNum2"
+                            style="@style/botonNumeral"
+                            android:text="2" />
+
+                        <Button
+                            android:id="@+id/btnActLogNum3"
+                            style="@style/botonNumeral"
+                            android:text="3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="-15dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnActLogNum4"
+                            style="@style/botonNumeral"
+                            android:text="4" />
+
+                        <Button
+                            android:id="@+id/btnActLogNum5"
+                            style="@style/botonNumeral"
+                            android:text="5" />
+
+                        <Button
+                            android:id="@+id/btnActLogNum6"
+                            style="@style/botonNumeral"
+                            android:text="6" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="-15dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnActLogNum7"
+                            style="@style/botonNumeral"
+                            android:text="7" />
+
+                        <Button
+                            android:id="@+id/btnActLogNum8"
+                            style="@style/botonNumeral"
+                            android:text="8" />
+
+                        <Button
+                            android:id="@+id/btnActLogNum9"
+                            style="@style/botonNumeral"
+                            android:text="9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="-10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnActLogNum0"
+                            style="@style/botonNumeral"
+                            android:layout_width="110dp"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="-10dp"
+                            android:text="0" />
+
+                        <Button
+                            android:id="@+id/btnActLogLimpiar"
+                            style="@style/botonNumeral"
+                            android:layout_width="240dp"
+                            android:layout_height="match_parent"
+                            android:text="Limpiar" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

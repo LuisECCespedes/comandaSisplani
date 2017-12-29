@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluc.siservis_comanda.DescuentoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        android:id="@+id/etActDescProdDescri"
+                        android:text=""/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    style="@style/botonGeneral"
+                    android:text="S/"
+                    android:id="@+id/btActDescSoles"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="%"
+                    android:id="@+id/btActDescPr"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    style="@style/botonGeneral"
+                    android:text="0"
+                    android:id="@+id/btActDescMontoCero"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/botonGeneral"
+                    android:id="@+id/btActDescMenos"
+                    android:layout_marginLeft="35dp"
+                    android:text="-"
+                    />
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:id="@+id/etActDescMonto"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:text=""
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/botonGeneral"
+                    android:id="@+id/btActDescMas"
+                    android:text="+"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    style="@style/botonGeneral"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="120dp"
+                    android:text="Precio : "/>
+
+                <EditText
+                    android:id="@+id/etActDescPrecio"
+                    style="@style/botonGeneral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:text="00.00"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    style="@style/botonGeneral"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="80dp"
+                    android:text="Descuento : "/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etActDescDescuento"
+                    android:enabled="false"
+                    android:focusable="false"
+                    style="@style/botonGeneral"
+                    android:textColor="@color/black"
+                    android:text="00.00"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:focusable="false"
+                    style="@style/botonGeneral"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="140dp"
+                    android:text="Total : "/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/etActDescTotal"
+                    style="@style/botonGeneral"
+                    android:focusable="false"
+                    android:textColor="@color/black"
+                    android:text="00.00"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ColorAceptar"
+                    android:text="Aplicar"
+                    android:id="@+id/btActDescAplicar"
+                    style="@style/botonGeneral"
+
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Cancelar"
+                    android:background="@color/ColorCancelar"
+                    android:id="@+id/btActDescCancelar"
+                    style="@style/botonGeneral"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

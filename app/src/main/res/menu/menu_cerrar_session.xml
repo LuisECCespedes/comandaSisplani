@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".Main" >
+    <item android:id="@+id/recargar"
+        android:title="@string/recargar"
+        android:orderInCategory="100"
+        />
+
+    <item android:id="@+id/cerrarSession"
+        android:title="@string/cerrarSession"
+        android:orderInCategory="100"
+        />
+
+</menu>

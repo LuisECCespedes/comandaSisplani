@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluc.siservis_comanda.ComandaMotivoCancelacionActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/btActivEspExtra"
+                    style="@style/botonGeneral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:text="Motivo : "
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etActivComMotCanNuevo"
+                    style="@style/botonGeneral"
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="2dp"
+                    android:focusable="true"
+                    android:text=""
+                    android:textAlignment="textStart" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btActivComMotCanGua"
+                    style="@style/botonGeneral"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/ColorAceptar"
+                    android:text="Guardar"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/gvActivComMotCanLista"
+                android:numColumns="1"
+                tools:layout_editor_absoluteY="8dp"
+                tools:layout_editor_absoluteX="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

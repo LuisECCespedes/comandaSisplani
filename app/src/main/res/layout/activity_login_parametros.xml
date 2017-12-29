@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fluc.siservis_comanda.LoginParametrosActivity">
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:id="@+id/txtUrl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="@string/urlApi"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginLeft="15dp"
+            android:id="@+id/txtEsquema"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="@string/esquema"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/chkRefresca"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Refresca"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txtTextoPrueba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola Mundo"
+            android:textSize="25dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnMenos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="25dp"/>
+        <EditText
+            android:id="@+id/etAcLogParTam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="35.0"
+            android:textSize="25dp"
+            />
+        <Button
+            android:id="@+id/btnMas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnActLogParGuardar"
+            style="@style/botonGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorAceptar"
+            android:text="Guardar Parametros"/>
+    </LinearLayout>
+
+</LinearLayout>

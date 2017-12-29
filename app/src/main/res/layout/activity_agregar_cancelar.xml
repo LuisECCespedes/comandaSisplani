@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fluc.siservis_comanda.AgregarCancelarActivity">
+
+    <Button
+        android:id="@+id/btActivACDescuento"
+        style="@style/botonGeneral"
+        android:layout_width="161dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="11dp"
+        android:text="Descuento"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etActACEspcExtra" />
+
+    <EditText
+        android:id="@+id/etActACProdDescri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etActACCantidad"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnActACMas"
+        app:layout_constraintTop_toBottomOf="@+id/btActivACDescuento" />
+
+    <Button
+        android:id="@+id/btnActACAgregar"
+        style="@style/botonGeneral"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/ColorAceptar"
+        android:text="Agregar"
+        app:layout_constraintEnd_toStartOf="@+id/btnActACCancelar"
+        app:layout_constraintTop_toBottomOf="@+id/etActACCantidad" />
+
+    <EditText
+        android:id="@+id/etActACProdPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginTop="7dp"
+        android:inputType="numberDecimal"
+        android:text="19.50"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btActivACDescuento"
+        app:layout_constraintEnd_toStartOf="@+id/btActivACDescuento"
+        app:layout_constraintTop_toTopOf="@+id/btActivACDescuento" />
+
+    <EditText
+        android:id="@+id/etActACEspcExtra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Poca Sal"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etActACProdDescri" />
+
+    <Button
+        android:id="@+id/btnActACMenos"
+        style="@style/botonGeneral"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:text="-"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/etActACCantidad"
+        app:layout_constraintTop_toBottomOf="@+id/etActACProdPrecio" />
+
+    <Button
+        android:id="@+id/btnActACCancelar"
+        style="@style/botonGeneral"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/ColorCancelar"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etActACCantidad" />
+
+    <EditText
+        android:id="@+id/etActACPrecio"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="7dp"
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:text="Precio : "
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etActACProdPrecio"
+        app:layout_constraintEnd_toStartOf="@+id/etActACProdPrecio"
+        app:layout_constraintTop_toTopOf="@+id/etActACProdPrecio" />
+
+    <Button
+        android:id="@+id/btnActACMas"
+        style="@style/botonGeneral"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="4dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/etActACCantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etActACProdPrecio" />
+
+    <GridView
+        android:id="@+id/gvActACListaEspc"
+        android:layout_width="match_parent"
+        android:layout_height="498dp"
+        android:layout_marginTop="212dp"
+        android:numColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etActACEspcExtra" />
+
+</android.support.constraint.ConstraintLayout>

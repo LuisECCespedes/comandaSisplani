@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Siservis_comanda</string>
+    <string name="nameBarLogin">Login</string>
+    <string name="nameBarMesas">Mesas</string>
+    <string name="nameBarTipoProducto">Tipo de Producto</string>
+    <string name="action_settings">Acciones</string>
+    <string name="cerrarSession">Cerrar Session</string>
+    <string name="recargar">Recargar</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="forgot_password">¿Se te olvidó tu contraseña?</string>
+    <string name="email">Usuario</string>
+    <string name="urlApi">UrlApi</string>
+    <string name="urlTipoLog">Login Completo</string>
+    <string name="Refresca">Refrescar Mesas</string>
+    <string name="esquema">Esquema</string>
+    <string name="password">Contraseña</string>
+    <string name="sign_in">Ingresar</string>
+    <string name="hintBuscarTipoProducto">buscar Tipo Producto</string>
+    <string name="hintProducto">buscar Producto</string>
+    <string name="hintEspecificaicones">buscar Especificaciones</string>
+    <string name="title_activity_comanda">ComandaActivity</string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.fluc.siservis_comanda.ComandaActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:enabled="false"
+                style="@style/botonGeneral"
+                android:id="@+id/btACtComTotalComanda"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/gvListaComanda"
+                    android:numColumns="1"
+                    tools:layout_editor_absoluteY="8dp"
+                    tools:layout_editor_absoluteX="8dp" />
+
+                <com.github.clans.fab.FloatingActionMenu
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:menu_fab_label="Menu"
+                    android:id="@+id/menuButton"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:fab_label="Nuevo Producto"
+                        android:src="@mipmap/ic_nuevo_producto"
+                        android:id="@+id/btnNuevo"
+                        android:onClick="clickProducto"
+                        />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:fab_label="Pre Cuenta"
+                        android:src="@mipmap/ic_precuenta"
+                        android:id="@+id/btnPrecuenta"
+                        android:onClick="clickPreCuenta"
+                        />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:fab_label="Imprimir"
+                        android:src="@mipmap/ic_imprimir_button"
+                        android:onClick="clickMenuImprimir"
+                        android:id="@+id/btnImprimir"
+                        />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:fab_label="Reimprimir"
+                        android:src="@mipmap/ic_reimprimir_button"
+                        android:onClick="clickMenuReImprimir"
+                        android:id="@+id/btnReeImprimir"
+                        />
+
+                </com.github.clans.fab.FloatingActionMenu>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
